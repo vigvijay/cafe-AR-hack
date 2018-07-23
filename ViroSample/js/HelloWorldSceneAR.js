@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import {StyleSheet} from 'react-native';
 import SecondScene from './SecondScene';
+import ProductShowcase from './ProductShowcase';
 
 import {
   ViroARScene,
@@ -71,7 +72,7 @@ export default class HelloWorldSceneAR extends Component {
     console.log(this.props);
     //console.log(props);
     console.log(SecondScene);
-    this.props.sceneNavigator.push({scene:SecondScene});
+    this.props.sceneNavigator.push({scene:ProductShowcase});
  }
 
   _onLoadStart() {
